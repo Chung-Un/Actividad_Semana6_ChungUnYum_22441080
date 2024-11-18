@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Ejercicio2_Actividad6 {
 
-    public static double descuento(){
+    public static double descuento(){ //funcion para sacar el precio final con el descuento aplicado
     double precioFinal=0;
     if(libro.getEdad() >=18){
     precioFinal = libro.getPrecio() - (libro.getPrecio()*0.25);
@@ -23,20 +23,20 @@ public class Ejercicio2_Actividad6 {
     return precioFinal;
     }
             
-    public static void mostrar(){
+    public static void mostrar(){ //procedimientos para imprimir la factura
    
      System.out.println("=============Factura==============\nTitulo: " + libro.getTitulo() + "\nAutor: " + libro.getAutor() + "\nISBN:" + libro.getIsbn() + "\nPrecio: " + libro.getPrecio()+ "\nEdad cliente: " + libro.getEdad());  
      
      
     }
     
-    public static Libros libro = new Libros();
+    public static Libros libro = new Libros();//se inicializa un nuevo libro
 
     
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         
-        System.out.println("Ingrese el titulo del libro: ");
+        System.out.println("Ingrese el titulo del libro: ");//se recolectan los componentes para el libro creado
         libro.setTitulo(entrada.nextLine());
         
         System.out.println("Ingrese el autor del libro: ");
@@ -52,8 +52,8 @@ public class Ejercicio2_Actividad6 {
         System.out.println("Ingrese su edad: ");
         libro.setEdad(entrada.nextInt());
        
-        mostrar();
-        System.out.println("Precio final (descuento aplicado): Lps." + descuento());
+        mostrar(); // se llama al procedimiento
+        System.out.println("Precio final (descuento aplicado): Lps." + descuento()); //se llama a la funcion
         
     }
     
