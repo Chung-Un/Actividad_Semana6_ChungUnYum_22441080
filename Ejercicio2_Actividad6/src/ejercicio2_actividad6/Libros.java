@@ -14,7 +14,7 @@ public class Libros {
     double precio;
     
     
-    
+    //getters y setters de los objetos a usar
     
 
     public String getTitulo() {

@@ -16,6 +16,7 @@ public class empleado {
     double salario;
     int edad,ant;
 
+    //getters y setters de los objetos a usar
     public String getNombre() {
         return nombre;
     }

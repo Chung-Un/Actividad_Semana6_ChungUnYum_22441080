@@ -17,15 +17,15 @@ public class Ejercicio1_Actividad6 {
     public static void salarioFinal(){ // procedimiento para aplicar el descuento al empleado segun los requisitos
         double salarioFinal;
     
-    if(empleado.getSalario()>18900 && empleado.getAnt()>5){
+    if(empleado.getSalario()>=18900 && empleado.getAnt()<=5){
     salarioFinal = empleado.getSalario() + (empleado.getSalario()*0.10);
     System.out.println("Se le agrega un 10% a su salario inicial\nSalario Final: Lps." + salarioFinal);
     }  
-    else if( 25000 > empleado.getSalario() && empleado.getSalario()<45000 && empleado.getAnt()>7 ){
+    else if( 25000 >= empleado.getSalario() && empleado.getSalario()<=45000 && empleado.getAnt()>7 ){
     salarioFinal = empleado.getSalario() + (empleado.getSalario()*0.15);
     System.out.println("Se le agrega un 15% a su salario inicial\nSalario Final: Lps." + salarioFinal);
     }
-    else if(empleado.getSalario()>45000){
+    else if(empleado.getSalario()>=45000){
     salarioFinal = empleado.getSalario() + (empleado.getSalario()*0.20);
     System.out.println("Se le agrega un 20% a su salario inicial\nSalario Final: Lps." + salarioFinal);
     }
