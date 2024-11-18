@@ -14,7 +14,7 @@ public class Ejercicio1_Actividad6 {
     
     public static empleado empleado = new empleado();
     
-    public static void salarioFinal(){
+    public static void salarioFinal(){ // procedimiento para aplicar el descuento al empleado segun los requisitos
         double salarioFinal;
     
     if(empleado.getSalario()>18900 && empleado.getAnt()>5){
@@ -39,7 +39,7 @@ public class Ejercicio1_Actividad6 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         
-        System.out.println("Ingrese su nombre: ");
+        System.out.println("Ingrese su nombre: "); //recolectando la info del empleado
         empleado.setNombre(entrada.nextLine());
         
         System.out.println("Ingrese su salario Lps.: ");
@@ -56,7 +56,7 @@ public class Ejercicio1_Actividad6 {
         empleado.setAnt(entrada.nextInt());
         
         System.out.println("Perfil de empleado\nNombre: " + empleado.getNombre() + "\nEdad: " + empleado.getEdad() + "\nGenero: " + empleado.getGenero()+ "\nSalario inicial: Lps." + empleado.getSalario() + "\nAntiguedad en la empresa: "+ empleado.getAnt());
-        salarioFinal();
+        salarioFinal(); //se imprime el resultado del procedimiento
     }
     
     

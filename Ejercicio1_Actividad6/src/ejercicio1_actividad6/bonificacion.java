@@ -8,8 +8,10 @@ package ejercicio1_actividad6;
  *
  * @author chung
  */
-public class bonificacion extends empleado {
+public class bonificacion extends Ejercicio1_Actividad6 {
     double bonificacion;
+    
+    //getters y setters de los objetos a usar
 
     public double getBonificacion() {
         return bonificacion;
